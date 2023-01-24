@@ -1,13 +1,15 @@
-package common;
+syntax = "proto3";
 
-import "../common/client_info.proto";
+package request;
+
+import "message/common/client_info.proto";
 
 
-option go_package = "common";
+option go_package = "request";
 
 
 
 message ResetManagerClientRequest {
-	ClientInfo old_adm_client = 0;
-	ClientInfo new_adm_client = 1;	
+	common.ClientInfo old_adm_client = 1;
+	common.ClientInfo new_adm_client = 2;	
 }

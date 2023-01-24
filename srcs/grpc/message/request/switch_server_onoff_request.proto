@@ -1,11 +1,13 @@
-package reqeust;
+syntax = "proto3";
 
-import "../common/client_info.proto";
+package request;
+
+import "message/common/client_info.proto";
 
 
 option go_package = "request";
 
 message SwitchServerOnOffRequest {
-	ClientInfo client = 1;
+	common.ClientInfo client = 1;
 	bool is_on = 2;	
 }

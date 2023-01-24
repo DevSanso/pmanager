@@ -1,8 +1,11 @@
-package common
+syntax = "proto3";
+
+package common;
 
 option go_package = "common";
 
-import "./hardware_resource.proto";
+import "message/common/hardware_resource.proto";
+import "message/common/info_resource.proto";
 
 enum Compare {
 	EQUAL_TO = 0;
@@ -10,8 +13,11 @@ enum Compare {
 	GREATER_THAN = 2;
 }
 
-message HardwareResourceCond {
+message ResourceCond {
 	int32 value = 1;
 	Compare compare = 2;
-	HardwareResource resource = 3;
+	oneof resource {
+		common.HardwareResource hardware = 3;
+		common.InfoResource info = 4;
+	}
 }

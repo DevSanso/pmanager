@@ -1,11 +1,13 @@
+syntax = "proto3";
+
 package request;
 
 option go_package = "request";
 
-import "../common/client_info.proto";
+import "message/common/client_info.proto";
 
 
 message SetServerGroupRequest {
-	ClientInfo client = 1;
+	common.ClientInfo client = 1;
 	string group_name = 2;	
 }

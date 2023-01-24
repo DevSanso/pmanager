@@ -1,16 +1,18 @@
+syntax = "proto3";
+
 package response;
 
 option go_package = "response";
 
-import "../common/client_info.proto";
-import "../common/error_message.proto";
+import "message/common/client_info.proto";
+import "message/common/error_message.proto";
 
 message ResetManagerClientResponse {
 	message Success {
-		ClientInfo new_info = 1;
+		common.ClientInfo new_info = 1;
 	}
 	oneof data {
 		Success success = 1;
-		ErrorMessage error = 2;
+		common.ErrorMessage error = 2;
 	}
 }

@@ -1,14 +1,15 @@
-package response
+syntax = "proto3";
+package response;
 
-import "../common/error_message.proto";
+import "message/common/error_message.proto";
 
 
 option go_package = "response";
 
 
-message InitServerResponce {
+message InitServerResponse {
 	oneof data {
 		string access_adm_key = 1;
-		ErrorMessage error = 2;		
+		common.ErrorMessage error = 2;		
 	}
 }
