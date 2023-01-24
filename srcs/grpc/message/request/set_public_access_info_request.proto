@@ -1,0 +1,18 @@
+package request;
+
+option go_package = "request";
+
+import "../common/client_info.proto";
+import "../common/hardware_resource.proto";
+import "../common/info_resource.proto";
+import "../common/access_modiffier.proto";
+
+
+message SetPublicAccessInfoRequest {
+	ClientInfo client = 1;
+	oneof resouce {	
+		HardwareResource hardware_resource = 2;
+		InfoResource 	info_resource = 3;
+	}
+	AccessModiffier modiffier = 4;
+}

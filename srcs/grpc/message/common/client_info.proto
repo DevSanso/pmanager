@@ -1,0 +1,11 @@
+package common
+
+option go_package = "common";
+
+
+message ClientInfo {
+	string hostname = 1;
+	int32 uid = 2;
+	int32 gid = 3;
+	optional string key = 4;
+}

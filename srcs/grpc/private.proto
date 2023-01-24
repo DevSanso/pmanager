@@ -1,0 +1,29 @@
+package grpc_service;
+
+option go_package = "grpc_service";
+
+import "./message/request/reset_manager_client_request.proto";
+import "./message/request/switch_server_onoff_request.proto";
+import "./message/request/set_public_access_info_request.proto";
+import "./message/request/set_module_reboot_cond_request.proto";
+import "./message/request/set_server_group_request.proto";
+import "./message/request/set_service_request.proto";
+import "./message/request/init_server_request.proto";
+
+import "./message/response/reset_manager_client_response.proto";
+import "./message/response/switch_server_onoff_response.proto";
+import "./message/response/set_public_access_info_response.proto";
+import "./message/response/set_module_reboot_cond_response.proto";
+import "./message/response/set_server_group_response.proto";
+import "./message/response/set_service_response.proto";
+import "./message/response/init_server_response.proto";
+
+service PrivateService {
+	rpc reset_manager_client(ResetManagerClientRequest) returns (ResetManagerClientResponse) {}
+	rpc switch_server_onoff(SwitchServerOnOffRequest) returns (SwitchServerOnOffResponse) {}
+	rpc set_public_access_info(SetPublicAccessInfoRequest) returns (SetPublicAccessInfoResponse) {}
+	rpc set_module_reboot_cond(SetModuleRebootCondRequest) returns (SetModuleRebootCondResponse) {}
+	rpc set_server_group(SetServerGroupRequest) returns (SetServerGroupResponse) {}
+	rpc set_service(SetServiceRequest) returns (SetServiceResponse) {}
+	rpc init_server(InitServerRequest) returns (InitServerResponse) {}
+}

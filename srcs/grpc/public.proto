@@ -1,0 +1,16 @@
+
+
+
+
+service PublicService {
+	rpc get_cpu() {}
+	rpc get_mem() {}
+	rpc get_running_process_cnt() {}
+	rpc get_module_list() {}
+	rpc get_using_resource_with_module() {}
+	rpc get_manager_log() {}
+	rpc get_module_log() {}
+	rpc get_gourup_id() {}
+	rpc get_index() {}
+	
+}

@@ -1,0 +1,14 @@
+package response
+
+import "../common/error_message.proto";
+
+
+option go_package = "response";
+
+
+message InitServerResponce {
+	oneof data {
+		string access_adm_key = 1;
+		ErrorMessage error = 2;		
+	}
+}

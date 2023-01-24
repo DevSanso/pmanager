@@ -1,0 +1,18 @@
+package response;
+
+
+option go_package = "response";
+
+import "../common/info_resource.proto";
+import "../common/error_message.proto";
+
+message SwitchServerOnOffResponse {
+	message Success {
+		InfoResource resource = 1;
+		bool status = 2;
+	}
+	oneof data {
+		Success success = 1;
+		ErrorMessage error = 2;
+	}
+}

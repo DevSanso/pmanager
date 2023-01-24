@@ -1,0 +1,20 @@
+package response;
+
+import "../common/error_message.proto";
+import "../common/access_modiffier.proto";
+
+option go_package = "response";
+
+
+
+message SetPublicAccessInfoResponse {
+	message Success {
+		AccessModifier modiffier = 1;
+	}
+
+	oneof data {
+		Success success = 1;
+		ErrorMessage error = 2;
+	}
+}
+

@@ -1,0 +1,16 @@
+package common;
+
+option go_package = "common";
+
+
+import '../common/client_info.proto';
+
+
+message InitServerMessage {
+	ClientInfo client = 1;
+
+	string service_name = 2;
+	string group_name = 3;
+	int32 index = 4;
+	
+}

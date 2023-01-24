@@ -1,0 +1,14 @@
+package response;
+
+import "../common/error_message.proto";
+
+option go_package = "response";
+
+
+
+message SetServiceResponse {
+	oneof data {
+		string success = 1;
+		ErrorMessage error = 2;
+	}
+}

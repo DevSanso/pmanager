@@ -1,0 +1,17 @@
+package common
+
+option go_package = "common";
+
+import "./hardware_resource.proto";
+
+enum Compare {
+	EQUAL_TO = 0;
+	LESS_THAN = 1;
+	GREATER_THAN = 2;
+}
+
+message HardwareResourceCond {
+	int32 value = 1;
+	Compare compare = 2;
+	HardwareResource resource = 3;
+}

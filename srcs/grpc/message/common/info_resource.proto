@@ -1,0 +1,14 @@
+package common;
+
+option go_package = "common";
+
+
+
+enum InfoResource {
+	IP = 0;
+	HOSTNAME = 1;
+	MODULE_INFO = 2;
+	MODULE_CNT = 3;
+
+	SERVER_POWER = 4;
+}

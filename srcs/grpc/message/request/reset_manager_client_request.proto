@@ -1,0 +1,13 @@
+package common;
+
+import "../common/client_info.proto";
+
+
+option go_package = "common";
+
+
+
+message ResetManagerClientRequest {
+	ClientInfo old_adm_client = 0;
+	ClientInfo new_adm_client = 1;	
+}

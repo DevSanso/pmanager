@@ -1,0 +1,10 @@
+package common;
+
+
+option go_package = "common";
+
+
+enum AccessModiffier {
+	PRIVATE = 0;
+	PUBLIC = 1;
+}

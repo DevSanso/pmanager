@@ -1,0 +1,13 @@
+package response;
+
+
+option go_package = "response";
+
+import "../common/error_message.proto";
+
+message SetModuleRebootCondResponse {
+	oneof data {
+		bool success = 1;
+		ErrorMessage error = 2;
+	}
+}

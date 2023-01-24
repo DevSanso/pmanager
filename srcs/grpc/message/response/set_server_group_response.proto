@@ -1,0 +1,17 @@
+package response;
+
+option go_package = "response";
+
+import "../common/error_message.proto";
+
+
+message SetServerGroupResponse {
+	message Success {
+		string old_group_name = 1;
+	}
+	oneof data {
+		Success success = 1;
+		ErrorMessage error = 2;
+	}
+
+}

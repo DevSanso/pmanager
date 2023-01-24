@@ -1,0 +1,16 @@
+package response;
+
+option go_package = "response";
+
+import "../common/client_info.proto";
+import "../common/error_message.proto";
+
+message ResetManagerClientResponse {
+	message Success {
+		ClientInfo new_info = 1;
+	}
+	oneof data {
+		Success success = 1;
+		ErrorMessage error = 2;
+	}
+}

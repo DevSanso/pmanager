@@ -1,0 +1,11 @@
+package reqeust;
+
+import "../common/client_info.proto";
+
+
+option go_package = "request";
+
+message SwitchServerOnOffRequest {
+	ClientInfo client = 1;
+	bool is_on = 2;	
+}

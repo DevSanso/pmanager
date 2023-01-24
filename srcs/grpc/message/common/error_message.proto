@@ -1,0 +1,12 @@
+package common
+
+
+
+option go_package = "common";
+
+
+
+message ErrorMessage {
+	int32 error_code = 1;
+	string error_message = 2;	
+}
