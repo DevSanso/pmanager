@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package grpc_service;
+package grpc;
 
-option go_package = "grpc_service";
+option go_package = "server/pkg/rpc/grpc";
 
 import "message/request/reset_manager_client_request.proto";
 import "message/request/switch_server_onoff_request.proto";
@@ -11,6 +11,8 @@ import "message/request/set_module_reboot_cond_request.proto";
 import "message/request/set_server_group_request.proto";
 import "message/request/set_service_request.proto";
 import "message/request/init_server_request.proto";
+import "message/request/push_module_request.proto";
+import "message/request/pop_module_request.proto";
 
 import "message/response/reset_manager_client_response.proto";
 import "message/response/switch_server_onoff_response.proto";
@@ -19,6 +21,8 @@ import "message/response/set_module_reboot_cond_response.proto";
 import "message/response/set_server_group_response.proto";
 import "message/response/set_service_response.proto";
 import "message/response/init_server_response.proto";
+import "message/response/push_module_response.proto";
+import "message/response/pop_module_response.proto";
 
 service PrivateService {
 	rpc reset_manager_client(request.ResetManagerClientRequest) returns (response.ResetManagerClientResponse) {}
@@ -28,4 +32,6 @@ service PrivateService {
 	rpc set_server_group(request.SetServerGroupRequest) returns (response.SetServerGroupResponse) {}
 	rpc set_service(request.SetServiceRequest) returns (response.SetServiceResponse) {}
 	rpc init_server(request.InitServerRequest) returns (response.InitServerResponse) {}
+	rpc push_module(request.PushModuleRequest) returns (response.PushModuleResponse) {}
+	rpc pop_module(request.PopModuleRequest) returns (response.PopModuleResponse) {}
 }

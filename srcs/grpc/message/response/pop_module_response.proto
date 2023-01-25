@@ -1,19 +1,14 @@
 syntax = "proto3";
-
 package response;
+
 
 option go_package = "message/response";
 
 import "message/common/error_message.proto";
 
-
-message SetServerGroupResponse {
-	message Success {
-		string old_group_name = 1;
-	}
+message PopModuleResponse {
 	oneof data {
-		Success success = 1;
+		bool success = 1;
 		common.ErrorMessage error = 2;
 	}
-
 }

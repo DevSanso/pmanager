@@ -3,7 +3,7 @@ syntax = "proto3";
 package response;
 
 
-option go_package = "response";
+option go_package = "message/response";
 
 import "message/common/info_resource.proto";
 import "message/common/error_message.proto";
