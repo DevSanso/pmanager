@@ -4,7 +4,7 @@ package response;
 import "message/common/error_message.proto";
 
 
-option go_package = "message/response";
+option go_package = "pkg/message/response";
 
 
 message InitServerResponse {

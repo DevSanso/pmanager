@@ -5,7 +5,7 @@ package request;
 import "message/common/client_info.proto";
 
 
-option go_package = "message/request";
+option go_package = "pkg/message/request";
 
 message SwitchServerOnOffRequest {
 	common.ClientInfo client = 1;

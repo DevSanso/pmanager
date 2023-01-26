@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package request;
 
-option go_package = "message/request";
+option go_package = "pkg/message/request";
 
 import "message/common/client_info.proto";
 import "message/common/hardware_resource.proto";

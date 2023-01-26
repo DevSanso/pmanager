@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package common;
 
-option go_package = "server/pkg/message/common";
+option go_package = "pkg/message/common";
 
 import "message/common/hardware_resource.proto";
 import "message/common/info_resource.proto";

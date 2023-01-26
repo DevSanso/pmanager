@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc;
 
-option go_package = "server/pkg/rpc/grpc";
+option go_package = "pkg/rpc/grpc";
 
 import "message/request/reset_manager_client_request.proto";
 import "message/request/switch_server_onoff_request.proto";

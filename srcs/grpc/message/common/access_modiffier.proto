@@ -3,7 +3,7 @@ syntax = "proto3";
 package common;
 
 
-option go_package = "server/pkg/message/common";
+option go_package = "pkg/message/common";
 
 
 enum AccessModiffier {
