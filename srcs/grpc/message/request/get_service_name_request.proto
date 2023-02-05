@@ -7,7 +7,6 @@ option go_package = "pkg/message/request";
 import "message/common/client_info.proto";
 
 
-message SetServerGroupRequest {
+message GetServiceNameRequest {
 	common.ClientInfo client = 1;
-	int32 group_id = 2;	
 }

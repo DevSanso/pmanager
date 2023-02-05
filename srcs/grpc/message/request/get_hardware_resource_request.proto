@@ -5,9 +5,10 @@ package request;
 option go_package = "pkg/message/request";
 
 import "message/common/client_info.proto";
+import "message/common/hardware_resource.proto";
 
 
-message SetServerGroupRequest {
+message GetHardwareResourceRequest {
 	common.ClientInfo client = 1;
-	int32 group_id = 2;	
+	repeated common.HardwareResource resources = 2;
 }

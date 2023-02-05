@@ -12,7 +12,6 @@ message InitServerRequest {
 	common.ClientInfo client = 1;
 
 	string service_name = 2;
-	string group_name = 3;
-	int32 index = 4;
+	int32 group_id = 3;
 	
 }
