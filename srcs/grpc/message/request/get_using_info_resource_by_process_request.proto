@@ -7,6 +7,6 @@ option go_package = "pkg/message/request";
 import "message/common/client_info.proto";
 
 
-message GetUsingInfoResouceByProcessRequest {
+message GetUsingInfoResourceByProcessRequest {
 	common.ClientInfo client = 1;
 }

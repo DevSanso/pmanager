@@ -1,0 +1,19 @@
+syntax = "proto3";
+package response;
+
+import "message/common/error_message.proto";
+
+option go_package = "pkg/message/response";
+
+
+
+
+message GetModuleListResponse {
+	message Success {
+		repeated string modules = 1;
+	}	
+	oneof data {
+		Success success = 1; 
+		common.ErrorMessage error = 2;		
+	}
+}
