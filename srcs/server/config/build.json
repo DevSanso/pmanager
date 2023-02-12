@@ -1,0 +1,4 @@
+{
+	"goPackage" : "./",
+	"grpcPackage" : "./../grpc"
+}
