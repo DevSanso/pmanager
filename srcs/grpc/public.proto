@@ -26,13 +26,13 @@ import "message/response/get_service_name_response.proto";
 import "message/response/get_module_log_response.proto";
 
 service PublicService {
-	rpc get_hardware_resource(request.GetHardwareResourceRequest) returns (response.GetHardwareResourceResponse) {}
-	rpc get_info_resource(request.GetInfoResourceRequest) returns (response.GetInfoResourceResponse) {}
-	rpc get_module_list(request.GetModuleListRequest) returns(response.GetModuleListResponse)  {}
-	rpc get_using_hardware_resource_by_process(request.GetUsingHardwareResourceByProcessRequest) returns (response.GetUsingHardwareResourceByProcessResponse) {}
-	rpc get_using_info_resouce_by_process(request.GetUsingInfoResourceByProcessRequest) returns (response.GetUsingInfoResourceByProcessResponse) {}
-	rpc get_manager_log(request.GetManagerLogRequest) returns (response.GetManagerLogResponse) {}
-	rpc get_module_log(request.GetModuleLogRequest) returns (response.GetModuleLogResponse) {}
- 	rpc get_group_id(request.GetGroupIdRequest) returns (response.GetGroupIdResponse) {}
-	rpc get_service_name(request.GetServiceNameRequest) returns (response.GetServiceNameResponse) {}	
+	rpc GetHardwareResource(request.GetHardwareResourceRequest) returns (response.GetHardwareResourceResponse) {}
+	rpc GetInfoResource(request.GetInfoResourceRequest) returns (response.GetInfoResourceResponse) {}
+	rpc GetModuleList(request.GetModuleListRequest) returns(response.GetModuleListResponse)  {}
+	rpc GetUsingHardwareResource_by_process(request.GetUsingHardwareResourceByProcessRequest) returns (response.GetUsingHardwareResourceByProcessResponse) {}
+	rpc GetUsingInfoResouce_by_process(request.GetUsingInfoResourceByProcessRequest) returns (response.GetUsingInfoResourceByProcessResponse) {}
+	rpc GetManagerLog(request.GetManagerLogRequest) returns (response.GetManagerLogResponse) {}
+	rpc GetModuleLog(request.GetModuleLogRequest) returns (response.GetModuleLogResponse) {}
+ 	rpc GetGroupId(request.GetGroupIdRequest) returns (response.GetGroupIdResponse) {}
+	rpc GetServiceName(request.GetServiceNameRequest) returns (response.GetServiceNameResponse) {}	
 }

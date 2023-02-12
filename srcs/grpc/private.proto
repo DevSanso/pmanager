@@ -25,13 +25,13 @@ import "message/response/push_module_response.proto";
 import "message/response/pop_module_response.proto";
 
 service PrivateService {
-	rpc reset_manager_client(request.ResetManagerClientRequest) returns (response.ResetManagerClientResponse) {}
-	rpc switch_server_onoff(request.SwitchServerOnOffRequest) returns (response.SwitchServerOnOffResponse) {}
-	rpc set_public_access_info(request.SetPublicAccessInfoRequest) returns (response.SetPublicAccessInfoResponse) {}
-	rpc set_module_reboot_cond(request.SetModuleRebootCondRequest) returns (response.SetModuleRebootCondResponse) {}
-	rpc set_server_group(request.SetServerGroupRequest) returns (response.SetServerGroupResponse) {}
-	rpc set_service(request.SetServiceRequest) returns (response.SetServiceResponse) {}
-	rpc init_server(request.InitServerRequest) returns (response.InitServerResponse) {}
-	rpc push_module(request.PushModuleRequest) returns (response.PushModuleResponse) {}
-	rpc pop_module(request.PopModuleRequest) returns (response.PopModuleResponse) {}
+	rpc ResetManagerClient(request.ResetManagerClientRequest) returns (response.ResetManagerClientResponse) {}
+	rpc SwitchServerOnoff(request.SwitchServerOnOffRequest) returns (response.SwitchServerOnOffResponse) {}
+	rpc SetPublicAccessInfo(request.SetPublicAccessInfoRequest) returns (response.SetPublicAccessInfoResponse) {}
+	rpc SetModuleRebootCond(request.SetModuleRebootCondRequest) returns (response.SetModuleRebootCondResponse) {}
+	rpc SetServerGroup(request.SetServerGroupRequest) returns (response.SetServerGroupResponse) {}
+	rpc SetService(request.SetServiceRequest) returns (response.SetServiceResponse) {}
+	rpc InitServer(request.InitServerRequest) returns (response.InitServerResponse) {}
+	rpc PushModule(request.PushModuleRequest) returns (response.PushModuleResponse) {}
+	rpc PopModule(request.PopModuleRequest) returns (response.PopModuleResponse) {}
 }
