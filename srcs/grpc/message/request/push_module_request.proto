@@ -8,10 +8,15 @@ option go_package = "pkg/message/request";
 import "message/common/client_info.proto";
 
 
+message LogFileDetectOption {
+	string log_path = 1;
+	repeated string names = 2;
+
+}
 
 
 message PushModuleRequest {
 	common.ClientInfo client = 1;
-	string module_name = 2;
-	
+	string path = 2;
+	string module_name = 3;  
 }
